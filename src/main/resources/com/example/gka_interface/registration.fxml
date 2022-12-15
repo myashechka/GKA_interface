@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gka_interface.RegistrationController">
+    <children>
+        <AnchorPane layoutY="-1.0" prefHeight="102.0" prefWidth="1200.0" style="-fx-background-color: #226481;">
+            <children>
+                <Pane accessibleRole="BUTTON" prefHeight="94.0" prefWidth="525.0">
+                    <children>
+                        <Button fx:id="logo" layoutX="-77.0" mnemonicParsing="false" prefHeight="94.0" prefWidth="653.0" style="-fx-background-color: none; -fx-border-color: none;">
+                            <graphic>
+                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Главные конкуренты Авиасейлс" textAlignment="RIGHT" wrappingWidth="547.4635620117188">
+                                    <font>
+                                        <Font name="Arial" size="28.0" />
+                                    </font>
+                                </Text>
+                            </graphic>
+                        </Button>
+                        <ImageView fitHeight="82.0" fitWidth="116.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@image/header_logo.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+                <Button fx:id="personalAccount" layoutX="1022.0" layoutY="40.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="151.0" style="-fx-border-radius: 10; -fx-background-color: #fafafa;" text="Личный кабинет" textAlignment="CENTER" textFill="#226481" textOverrun="CLIP" AnchorPane.topAnchor="40.0">
+                    <font>
+                        <Font name="Arial" size="15.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <Text fill="#226481" layoutX="523.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Регистрация">
+            <font>
+                <Font name="Arial Bold" size="36.0" />
+            </font>
+        </Text>
+        <TextField fx:id="surnameField" layoutX="247.0" layoutY="316.0" opacity="0.66" prefHeight="58.0" prefWidth="350.0" promptText="Фамилия" style="-fx-border-radius: 20;">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font>
+        </TextField>
+        <Button fx:id="regButton" layoutX="491.0" layoutY="680.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="289.0" style="-fx-border-radius: 10; -fx-background-color: #226481; -fx-cursor: pointer;" text="Зарегистрироваться" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+            <font>
+                <Font name="Arial Bold" size="24.0" />
+            </font>
+        </Button>
+      <TextField fx:id="nameField" layoutX="247.0" layoutY="402.0" opacity="0.66" prefHeight="58.0" prefWidth="350.0" promptText="Имя" style="-fx-border-radius: 20;">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="patronymicField" layoutX="247.0" layoutY="487.0" opacity="0.66" prefHeight="58.0" prefWidth="350.0" promptText="Отчество" style="-fx-border-radius: 20;">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordField" layoutX="674.0" layoutY="402.0" prefHeight="58.0" prefWidth="351.0" promptText="Пароль">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </PasswordField>
+      <Text fill="#00000038" layoutX="680.0" layoutY="506.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пол">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="58.0" layoutX="674.0" layoutY="484.0" stroke="#00000029" strokeType="INSIDE" width="351.0" />
+      <RadioButton fx:id="isMan" layoutX="839.0" layoutY="509.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="159.0" text="Мужской">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="isWoman" layoutX="680.0" layoutY="509.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="159.0" text="Женский">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <DatePicker fx:id="birthdayField" layoutX="246.0" layoutY="573.0" prefHeight="58.0" prefWidth="351.0" promptText="Дата рождения" />
+      <Label fx:id="regMessage" layoutX="488.0" layoutY="746.0" prefHeight="23.0" prefWidth="371.0" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="loginField" layoutX="674.0" layoutY="317.0" opacity="0.66" prefHeight="58.0" prefWidth="350.0" promptText="Логин" style="-fx-border-radius: 20;">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+    </children>
+</AnchorPane>

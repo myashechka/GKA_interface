@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="177.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fx:id="companyFrom" fill="#226481" layoutX="290.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Utair" wrappingWidth="113.4971923828125">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="timeFrom" fill="#226481" layoutX="347.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="22:25">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="dateFrom" fill="#226481" layoutX="347.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="06.12.2022">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="36.0" fitWidth="79.0" layoutX="286.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/from.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="79.0" layoutX="926.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/to.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="From" fill="#226481" layoutX="446.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Уфа" wrappingWidth="289.60089111328125">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="timeTo" fill="#226481" layoutX="841.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="22:25">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="dateTo" fill="#226481" layoutX="829.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="06.12.2022">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="To" fill="#226481" layoutX="533.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Москва" textAlignment="RIGHT" wrappingWidth="289.60089111328125">
+         <font>
+            <Font name="Arial Bold" size="31.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="157.0" layoutY="12.0" startX="99.99996948242188" startY="135.82545471191406" />
+      <Text fx:id="count_score" fill="#226481" layoutX="58.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="250" textAlignment="CENTER" wrappingWidth="141.87982177734375">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </Text>
+      <Text fill="#226481" layoutX="-12.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Начислено баллов:" textAlignment="CENTER" wrappingWidth="282.123291015625">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Text>
+      <QuadCurve controlX="-84.03479766845703" controlY="-100.8086929321289" endX="-26.39405059814453" endY="-94.87455749511719" fill="#1f93ff00" layoutX="92.0" layoutY="105.0" startX="-84.03479766845703" startY="-51.04346466064453" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="98.36520233154297" endY="19.95653533935547" layoutX="-90.0" layoutY="32.0" startX="97.96520233154297" startY="71.13679504394531" />
+      <QuadCurve controlX="-84.03479766845703" controlY="-100.8086929321289" endX="-25.39405059814453" endY="-97.67386627197266" fill="#1f93ff00" layoutX="92.0" layoutY="201.0" scaleY="-1.0" startX="-84.03479766845703" startY="-52.04346466064453" stroke="BLACK" strokeType="INSIDE" />
+      <QuadCurve controlX="-84.03479766845703" controlY="-100.8086929321289" endX="-29.92992401123047" endY="-95.37455749511719" fill="#1f93ff00" layoutX="1013.0" layoutY="105.0" scaleX="-1.0" startX="-84.03479766845703" startY="-52.04346466064453" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="1181.9652099609375" endY="20.032565307617187" layoutX="-253.0" layoutY="-10.0" startX="318.31304931640625" startY="20.332565307617188" />
+      <Line endX="1180.965087890625" endY="20.956527709960938" layoutX="-252.0" layoutY="128.0" startX="319.31304931640625" startY="20.53257293701172" />
+      <Line endX="98.36520233154297" endY="19.95653533935547" layoutX="884.0" layoutY="33.0" startX="98.37000732421875" startY="73.08061218261719" />
+      <QuadCurve controlX="-84.03479766845703" controlY="-100.8086929321289" endX="-29.92992401123047" endY="-95.37455749511719" fill="#1f93ff00" layoutX="1013.0" layoutY="202.0" scaleX="-1.0" scaleY="-1.0" startX="-84.03479766845703" startY="-52.04346466064453" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</Pane>

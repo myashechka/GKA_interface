@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane fitToHeight="true" hbarPolicy="NEVER" minHeight="-Infinity" minWidth="-Infinity" pannable="true" prefViewportHeight="800.0" prefViewportWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gka_interface.AccountController">
+   <content>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefWidth="1200.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <AnchorPane layoutY="-1.0" prefHeight="102.0" prefWidth="1200.0" style="-fx-background-color: #226481;">
+               <children>
+                  <Pane accessibleRole="BUTTON" prefHeight="94.0" prefWidth="525.0">
+                     <children>
+                        <ImageView fitHeight="82.0" fitWidth="116.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/header_logo.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="logotip" layoutX="-2.0" mnemonicParsing="false" prefHeight="94.0" prefWidth="462.0" style="-fx-background-color: none; -fx-border-color: none;">
+                           <graphic>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Главные конкуренты Авиасейлс" textAlignment="RIGHT" wrappingWidth="539.11572265625">
+                                 <font>
+                                    <Font name="Arial" size="28.0" />
+                                 </font>
+                              </Text>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Button fx:id="exitButton" layoutX="1022.0" layoutY="40.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="151.0" style="-fx-border-radius: 10; -fx-background-color: #fafafa;" text="Выйти" textAlignment="CENTER" textFill="#226481" textOverrun="CLIP">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Text fill="#226481" layoutX="482.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+            </Text>
+            <Circle fill="#e3e3e34f" layoutX="127.0" layoutY="216.0" radius="90.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <ImageView fitHeight="93.0" fitWidth="73.0" layoutX="91.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/user.png" />
+               </image>
+            </ImageView>
+            <Text fill="#226481" layoutX="387.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Фамилия:">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#226481" layoutX="387.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Имя:">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#226481" layoutX="387.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Отчество:">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#226481" layoutX="774.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Логин:">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#226481" layoutX="774.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дата рождения:">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#226481" layoutX="774.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Баллы:">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="surnameField" fill="#1d1d1d" layoutX="486.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Стрельникова">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="nameField" fill="#1d1d1d" layoutX="442.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Арина">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="preField" fill="#1d1d1d" layoutX="486.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Антоновна">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="loginField" fill="#1d1d1d" layoutX="840.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="aaa@gmail.com">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="dateField" fill="#1d1d1d" layoutX="928.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="07.07.2003">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="scoreField" fill="#1d1d1d" layoutX="845.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Text>
+            <Line endX="1093.0" layoutX="107.0" layoutY="345.0" startX="-100.0" />
+            <Text fx:id="bron" layoutX="190.0" layoutY="583.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В данный момент бронирования отсутствуют">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text fill="#226481" layoutX="485.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Бронирования">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+            </Text>
+            <VBox fx:id="divTickets" layoutX="127.0" layoutY="412.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="356.0" prefWidth="1125.0" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
