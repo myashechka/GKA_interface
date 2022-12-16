@@ -9,6 +9,7 @@ import models.Booking;
 import models.Ticket;
 import services.BookingService;
 import services.TicketService;
+import services.UserService;
 
 import java.io.IOException;
 import java.util.List;
@@ -16,6 +17,7 @@ import java.util.Objects;
 
 public class TicketController {
     private final BookingService bookingService = new BookingService();
+    private final UserService userService = new UserService();
     @FXML
     private Text From;
 
@@ -57,6 +59,7 @@ public class TicketController {
         buyButton.setDisable(true);
         bookingService.postBooking(new Booking(0L,CurrentUserManager.getUser(),current_ticket,null, true,true));
         CurrentUserManager.getUser().score += current_ticket.cost/10;
+        userService.putUser(CurrentUserManager.getUser());
     }
 
     @FXML
