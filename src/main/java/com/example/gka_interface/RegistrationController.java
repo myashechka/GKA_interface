@@ -73,7 +73,6 @@ public class RegistrationController {
             }else {
                 regMessage.setText("Вы успешно зарегистрированы!");
                 regMessage.setTextFill(Color.GREEN);
-                mainPage();
             }
         }
     }
